@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - single digit numbers
+ * main - single digit number
+ * Description: print single digit numbers with commass
  * return 0
  */
 
