@@ -3,7 +3,7 @@
 /**
  * main - single digit number
  * Description: print single digit numbers with commass
- * return 0
+ * Return: Or time to turn0
  */
 
 int main(void)
