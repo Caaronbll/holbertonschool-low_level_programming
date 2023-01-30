@@ -5,11 +5,11 @@
  * Return: Always 0 (Success)
  */
 
-int main(void) 
+int main(void)
 {
 	char *a = "_putchar";
 
-	while (*a) 
+	while (*a)
 	{
 		_putchar(*a);
 		a++;
