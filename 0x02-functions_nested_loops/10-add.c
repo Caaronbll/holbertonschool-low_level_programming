@@ -10,7 +10,7 @@
  * Return: sum
  */
 
-int add(int, int)
+int add(int n1, int n2)
 {
 	int sum = (n1 + n2);
 
