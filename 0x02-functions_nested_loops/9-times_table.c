@@ -10,14 +10,32 @@
 
 void times_table(void)
 {
-	int y;
-	for (y = 48; y < 58; y++)
+	int r, c, d;
+
+	for (r = 0; r < 10; r++)
 	{
-		int x;
-		for (x = 48; x < 58; x++)
+		_putchar('0');
+		_putchar(',');
+		_putchar(' ');
+		for (c = 1; c < 10; c++)
 		{
-			_putchar(x * y);
-			_putchar(', ');
+			d = (c * r);
+			if ((d / 10) > 0)
+			{
+				_putchar((d / 10) + '0');
+			}
+			else
+			{
+				_putchar(' ');
+			}
+			_putchar((d % 10) + '0');
+
+			if (cone < 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
+		_putchar('\n');
 	}
-}	
+}
