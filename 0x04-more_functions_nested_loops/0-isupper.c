@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - check for uppercase.
+ * _isupper - Entry point
  * @c: check ascii table for the characters
  * Return: 1 or 0
  */
