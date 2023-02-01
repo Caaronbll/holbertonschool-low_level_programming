@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * main - check for uppercas.
- *
- * Return: 1 or 0.
+ * main - check for uppercase.
+ * @c: check ascii table for the characters
+ * Return: 1 or 0.i
  */
 
 int _isupper(int c)
