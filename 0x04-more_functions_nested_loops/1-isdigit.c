@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _isupper - Entry point
+ * _isdigit - Entry point
  * @c: check ascii table for the characters
  * Return: 1 or 0
  */
