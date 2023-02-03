@@ -6,9 +6,10 @@
  * Return: void
  */
 
-print_diagonal(int n)
+void print_diagonal(int n)
 {
 	int line, start;
+
 	if (n > 0)
 	{
 	for (line = 0; line < n; line++)
