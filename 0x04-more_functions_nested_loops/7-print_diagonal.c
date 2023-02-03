@@ -9,7 +9,8 @@
 print_diagonal(int n)
 {
 	int line, start;
-
+	if (n > 0)
+	{
 	for (line = 0; line < n; line++)
 	{
 
@@ -21,4 +22,9 @@ print_diagonal(int n)
 		_putchar('\n');
 	}
 	_putchar('\n');
+	}
+	else
+	{
+		_putchar('\n');
+	}
 }
