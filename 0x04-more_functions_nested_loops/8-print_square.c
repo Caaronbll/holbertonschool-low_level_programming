@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /*
- * print_square - i am printing squares!
- * @size: size of square
- * Return: a square
+ *print_square - i am printing squares!
+ *@size: size of square
+ *Return: a square
  */
 
 void print_square(int size)
