@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * rev_string - string in reverse
  * @s: string
  * Return: void.
  */
@@ -27,4 +27,4 @@ void rev_string(char *s)
 		s[m - h] = l;
 		h--;
 	}
-}		
+}
