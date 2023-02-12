@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 /**
- * leet - encodes a string 
+ * leet - encodes a string
  * @s: string to encode
  * Return: encoded string
  */
 
-char *leet(char *)
+char *leet(char *s)
 {
 	char *r = s;
 	char a[] = { 'a', 'e', 'o', 't', 'l' };
