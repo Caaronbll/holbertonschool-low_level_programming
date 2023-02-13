@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "holberton.h"i
 #include <string.h>
 
 /**
@@ -11,20 +11,19 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	char p* = dest;
-	int count = 0;
+	int len1 = 0, len2 = 0, i;
 
-	while (*dest++)
-	{
-		dest--;
-	}
-	while (*src && count < n)
-	{
-		*dest = *src;
-		dest++;
-		src++;
-		count++;
-	}
-	*dest = '\0';
-	return (p);
+	while (src[len1] != '\0')
+		len1++;;
+
+	while (dest[len2] != '\0')
+		len2++;
+	
+	for (i = 0; i < n && src[i] != '\0'; i++)
+		dest[i] = src[i];
+
+	for (; i < n; i++)
+		dest[i] = '\0';
+
+	return (dest)
 }
