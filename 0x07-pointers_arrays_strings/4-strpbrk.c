@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -10,13 +10,13 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	int i;
+	int i = 0;
 
-	while (*s)
+	while (s[i])
 	{
-		for (i = 0; accept[i]; i++)
+		for (; accept[i] != '\0'; i++)
 		{
-			if (*s == accept[i])
+			if (s[i] == accept[i])
 				return (s);
 		}
 		s++;
