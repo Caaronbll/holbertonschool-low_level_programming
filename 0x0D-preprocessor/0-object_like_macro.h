@@ -1,7 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
-#include <stdio.h>
-#include <stdlib.h>
+#ifndef _HEADER_
+#define _HEADER_
 
 #define SIZE 1024
 
