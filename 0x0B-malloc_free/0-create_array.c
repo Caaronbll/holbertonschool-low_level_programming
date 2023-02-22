@@ -2,14 +2,16 @@
 #include <stdio.h>
 
 /**
- * main - main
- *
+ * create_array - creates an array of strings
+ * @size: this is the size
+ * @c: character
+ * Return: an array
  */
 
 char *create_array(unsigned int size, char c)
 {
 	char *array;
-	unsigned int i;
+	unsigned int index;
 
 	if (!size)
 		return (NULL);
