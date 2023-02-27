@@ -14,7 +14,7 @@ int *array_range(int min, int max)
 	int a = min;
 	int b = max;
 	int counter;
-	int length = b - a;
+	int length = b - a + 1;
 	int *new_array;
 
 	if (a > b)
