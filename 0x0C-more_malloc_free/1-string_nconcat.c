@@ -29,11 +29,20 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	sout = malloc(sizeof(char *) * (i + j + 1));
 
-	for (a = 0; a <= i; a++)
+	if (!sout)
+	{
+		return (NULL);
+	}
+
+	for (a = 0; a < i; a++)
 		sout[a] = s1[a];
-
-	for (b = 0; b <= j; b++)
-		sout[a + b + 1] = s2[b];
-
+	
+	for (b = 0; a < j; b++)
+	{
+		sout[a] = s2[b];
+		a++;
+	}
+	
+	sout[a] = '\0';
 	return (sout);
 }
