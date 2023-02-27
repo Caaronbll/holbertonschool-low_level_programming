@@ -26,7 +26,7 @@ int *array_range(int min, int max)
 		return (NULL);
 
 	for (counter = 0; counter < length; counter++)
-		new_array[counter] = counter + b;
+		new_array[counter] = counter + a;
 
 	return (new_array);
 }
