@@ -12,20 +12,20 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int len1, len2, i, j, total, scope;
+	unsigned int len1 = 0, len2, i, j, scope;
 	char *sout;
 
 	if (!s1)
 		s1 = "";
 	if (!s2)
 		s2 = "";
-	for (len1 = 0; s1[len1]; len1++)
 
-	for (len2 = 1; s2[len2]; len2++)
-	total = len1 + len2;
-	scope = len1 + n;
-	if (scope > total)
-		scope = total;
+	while (s1[len1])
+		len1++;
+
+	len2 = n;
+	scope = len1 + len2;
+
 	sout = malloc(sizeof(char) * (scope));
 	if (!sout)
 	{
