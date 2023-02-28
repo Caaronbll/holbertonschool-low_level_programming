@@ -26,7 +26,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	len2 = n;
 	scope = len1 + len2;
 
-	sout = malloc(sizeof(char) * (scope));
+	sout = malloc(sizeof(char) * (scope + 1));
 	if (!sout)
 	{
 		return (NULL);
