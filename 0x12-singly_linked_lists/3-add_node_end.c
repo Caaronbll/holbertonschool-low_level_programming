@@ -8,7 +8,7 @@
  * Return: pointer at the end of the string
  */
 
-list_t *add_node_end(list_t **head, const char *str);
+list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *newnode = malloc(sizeof(size_t));
 	list_t *temp = *head;
@@ -20,8 +20,8 @@ list_t *add_node_end(list_t **head, const char *str);
 	newnode->len = strlen(str);
 	newnode->next = NULL;
 
-	while (*head == NULL)
-		head = newnode;
+	if (*head == NULL)
+		*head = newnode;
 	else
 	{
 		while (temp->next)
