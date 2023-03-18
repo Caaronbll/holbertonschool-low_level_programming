@@ -1,4 +1,5 @@
 #include "lists.h"
+#include "4-free_listint.c"
 
 /**
  * free_listint2 - frees a list and sets the head to null
@@ -8,13 +9,8 @@
 
 void free_listint2(listint_t **head)
 {
-	listint_t *body = *head;
-
-	while (body)
-	{
-		body->next = body;
-		free(body);
-	}
-
+	if (!head)
+		return;
+	free_listint(*head);
 	*head = NULL;
 }
