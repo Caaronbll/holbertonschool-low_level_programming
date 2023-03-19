@@ -5,6 +5,7 @@
  * @head: head of the list
  * @idx: index in lest for added node
  * @n: data of new node
+ * Return: newnode
  */
 
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
@@ -34,6 +35,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 			break;
 		i++;
 		temp = temp->next;
+	}
 
 	if (i < idx - 1)
 		return (NULL);
