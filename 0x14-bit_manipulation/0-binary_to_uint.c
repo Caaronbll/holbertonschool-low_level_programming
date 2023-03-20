@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * binary_to_unit - converts from base 2 to base 10
+ * binary_to_uint - converts from base 2 to base 10
  * @b: input binary string
  * Return: converted number
  */
@@ -22,7 +22,7 @@ unsigned int binary_to_uint(const char *b)
 	while (b[i] == '0' || b[i] == '1')
 	{
 		sum <<= 1;
-		sum += b[i]-'0';
+		sum += b[i] - '0';
 		i++;
 	}
 	return (sum);
