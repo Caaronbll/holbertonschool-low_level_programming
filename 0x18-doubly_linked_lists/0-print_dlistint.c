@@ -6,17 +6,15 @@
  * Return: all the data of the list
  */
 
-size_t print_dlistint(const dlistint_t *h);
+size_t print_dlistint(const dlistint_t *h)
 {
-	dlistint_t *temp;
 	int nodes = 0;
 
-	temp = h;
 
 	while (h)
 	{
-	printf("%d", temp->n)
-	temp = temp->next;
+	printf("%d\n", h->n);
+	h = h->next;
 	nodes++;
 	}
 	return (nodes);
