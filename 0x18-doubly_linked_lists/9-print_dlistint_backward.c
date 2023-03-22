@@ -8,7 +8,7 @@
 
 size_t print_dlistint_backward(const dlistint_t *h)
 {
-	size_t nodes = 0;
+	int nodes = 0;
 
 	while (h->next)
 		h = h->next;
