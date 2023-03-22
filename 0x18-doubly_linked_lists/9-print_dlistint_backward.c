@@ -15,7 +15,7 @@ size_t print_dlistint_backward(const dlistint_t *h)
 	while (h->next)
 		h = h->next;
 
-	while (h->prev)
+	while (h)
 	{
 		h = h->prev;
 		nodes++;
