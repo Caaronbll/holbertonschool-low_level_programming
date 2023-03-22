@@ -14,13 +14,13 @@ size_t print_dlistint_backward(const dlistint_t *h)
 		return (0);
 
 	while (h->next)
-		h->next = h;
+		h = h->next;
 
 	while (h)
 	{
+		printf("%d\n", h->n);
 		h = h->prev;
 		nodes++;
-		printf("%d\n", h->n);
 	}
 	return (nodes);
 }
