@@ -4,6 +4,9 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <sys/uio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <fcntl.h>
 
 /* prototypes*/
 ssize_t read_textfile(const char *filename, size_t letters);
