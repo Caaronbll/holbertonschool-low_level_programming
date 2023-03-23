@@ -9,7 +9,7 @@
  * Return: number of letters it can read and print
  */
 
-ssize_t read_textfile(const char *filename, size_t letters);
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t file, writeOut, readOut;
 	char *text = malloc(letters);
