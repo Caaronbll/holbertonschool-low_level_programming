@@ -11,7 +11,7 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
-	hash_node_t = *new_node, *current;
+	hash_node_t *new_node, *current;
 
 	if (strcmp(key, "") == 0 || key == NULL || ht == NULL)
 		return (0);
@@ -40,7 +40,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		if (strcmp(current->key, key) == 0)
 		{
 			new_node->next = current->next->next;
-			free_node(surrent->next);
+			free_node(current->next);
 			current->next = new_node;
 		}
 		else
