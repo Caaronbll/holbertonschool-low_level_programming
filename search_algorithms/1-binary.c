@@ -15,29 +15,29 @@ size_t left = 0, middle, right = size - 1;
 
 if (array == NULL)
 {
-    return (-1);
+return (-1);
 }
-    while (left <= right)
-    {
-        printf("Searching in array: ");
-        for (i = left; i < right; i++)
-        {
-            printf("%i, ", array[i]);
-        }
-        printf("%i\n", array[right]);
-        middle = (left + right) / 2;
-        if (array[middle] < value)
-        {
-            left = middle + 1;
-        }
-        else if (array[middle] > value)
-        {
-            right = middle -1;
-        }
-        else
-        {
-            return (middle);
-        }
-    }
-    return (-1);
+while (left <= right)
+{
+printf("Searching in array: ");
+for (i = left; i < right; i++)
+{
+printf("%i, ", array[i]);
+}
+printf("%i\n", array[right]);
+middle = (left + right) / 2;
+if (array[middle] < value)
+{
+left = middle + 1;
+}
+else if (array[middle] > value)
+{
+right = middle -1;
+}
+else
+{
+return (middle);
+}
+}
+return (-1);
 }
