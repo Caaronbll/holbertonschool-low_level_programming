@@ -32,7 +32,7 @@ left = middle + 1;
 }
 else if (array[middle] > value)
 {
-right = middle -1;
+right = middle - 1;
 }
 else
 {
